@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .wrap{
+            width: 900px;
+            height: 800px;
+            
+            margin: 30px auto;
+            border: 2px solid black; 
+            border-radius: 40px;
+            background: linear-gradient(to right bottom, #4b6cb7, #182848);
+           box-shadow: 10px 10px 5px black;
+
+        }
+        h1{
+            font-size: 70px;
+            color:black;
+            text-align: center;
+            border-bottom: 3px solid black;
+        }
+        table{
+            font-size: 30px;
+            text-align: center;
+            margin-left: 25px;
+
+        }
+        td{
+            padding: 10px 20px 0px 0px;
+
+        }
+        .txt{
+            width: 400px;
+            height: 50px;
+            border-radius: 8px;
+        }
+        .txtarea{
+            width: 830px;
+            height: 150px;
+            border-radius: 8px;
+
+        }
+        .btn{
+            width: 830px;
+            height: 50px;
+            background-color:black ;
+            border-radius: 8px;
+            font-size: 20px;
+            color: white;
+
+
+
+        }
+    </style>
+</head>
+<body>
+   <div class="wrap">
+    <table>
+        <form action="" method="">
+            <h1>Feedback Form</h1>
+            <tr>
+                <td colspan="2">
+                    <label>
+                        How do you rate your overall experience?
+                    </label><br>
+                        <input type="radio" name="rate" value="bad">Bad
+                        <input type="radio" name="rate" value="Average">Average
+                        <input type="radio" name="rate" value="Excellent">Excellent
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Full Name</label></br>
+                    <input type="text"name="Full Name" class="txt" style="font-size: large;">
+                </td>
+                <td>
+                    <label>Email</label><br>
+                    <input type="text" name="Email" class="txt"style="font-size: large;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Age</label></br>
+                    <input type="text"name="Age" class="txt"style="font-size: large;">
+                </td>
+                <td>
+                    <label>Phone No.</label><br>
+                    <input type="tel" name="Phone" class="txt" pattern="[0-9]{10}"font-size: large;">
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2">
+                <label >Message</label><br>
+                <textarea class="txtarea"style="font-size: large;"></textarea>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="Submit"  class="btn">Submit</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+   </div> 
+</body>
+</html>

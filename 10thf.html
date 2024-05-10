@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right bottom, #4b6cb7, #182848);
+  margin: 10px;
+}
+
+.question-box {
+  background-color: #020432;
+  color: #fff;
+  padding: 20px;
+  width: 700px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background-color: #075f2c;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #c8c9cf;
+}
+
+label:hover {
+  background-color: #3498db;
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+}
+
+.submit, .result {
+  width: 200px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: rgb(36, 177, 85);
+  border-radius: 10px;
+  font-size: x-large;
+  margin-top: 30px;
+  margin-left: 700px;
+}
+
+
+.submit {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="question-box">
+    <h2>1.You regularly make new friends.</h2>
+    <input type="radio" id="q1yes" name="answer1" value="yes">
+    <label for="q1yes">Yes</label>
+
+    <input type="radio" id="q1no" name="answer1" value="no">
+    <label for="q1no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>2.In your social circle, you are often the one who contacts your friends and initiates activities.</h2>
+    <input type="radio" id="q2yes" name="answer2" value="yes">
+    <label for="q2yes">Yes</label>
+
+    <input type="radio" id="q2no" name="answer2" value="no">
+    <label for="q2no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>3.You take leadership roles in group settings</h2>
+    <input type="radio" id="q3yes" name="answer3" value="yes">
+    <label for="q3yes">Yes</label>
+
+    <input type="radio" id="q3no" name="answer3" value="no">
+    <label for="q3no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>4.At social events, you try to introduce yourself to new people.</h2>
+    <input type="radio" id="q4yes" name="answer4" value="yes">
+    <label for="q4yes">Yes</label>
+
+    <input type="radio" id="q4no" name="answer4" value="no">
+    <label for="q4no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>5.You are very sentimental.</h2>
+    <input type="radio" id="q5yes" name="answer5" value="yes">
+    <label for="q5yes">Yes</label>
+
+    <input type="radio" id="q5no" name="answer5" value="no">
+    <label for="q5no">No</label>
+  </div><div class="question-box">
+    <h2>6.Even a small mistake doesn't cause you to doubt your overall abilities and knowledge.
+    </h2>
+    <input type="radio" id="q6yes" name="answer6" value="yes">
+    <label for="q6yes">Yes</label>
+
+    <input type="radio" id="q6no" name="answer6" value="no">
+    <label for="q6no">No</label>
+  </div><div class="question-box">
+    <h2>7.You rarely worry about whether you make a good impression on people you meet</h2>
+    <input type="radio" id="q7yes" name="answer7" value="yes">
+    <label for="q7yes">Yes</label>
+
+    <input type="radio" id="q7no" name="answer7" value="no">
+    <label for="q7no">No</label>
+  </div><div class="question-box">
+    <h2>8.You rarely feel insecure.</h2>
+    <input type="radio" id="q8yes" name="answer8" value="yes">
+    <label for="q8yes">Yes</label>
+
+    <input type="radio" id="q8no" name="answer8" value="no">
+    <label for="q8no">No</label>
+  </div><div class="question-box">
+    <h2>9.Seeing other people cry can easily make you feel like you want to cry too.</h2>
+    <input type="radio" id="q9yes" name="answer9" value="yes">
+    <label for="q9yes">Yes</label>
+
+    <input type="radio" id="q9no" name="answer9" value="no">
+    <label for="q9no">No</label>
+  </div><div class="question-box">
+    <h2>10.You are definitely an artistic type of person.</h2>
+    <input type="radio" id="q10yes" name="answer10" value="yes">
+    <label for="q10yes">Yes</label>
+
+    <input type="radio" id="q10no" name="answer10" value="no">
+    <label for="q10no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>11.You know at first glance how someone is feeling.</h2>
+    <input type="radio" id="q11yes" name="answer11" value="yes">
+    <label for="q11yes">Yes</label>
+
+    <input type="radio" id="q11no" name="answer11" value="no">
+    <label for="q11no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>12.You believe that pondering abstract philosophical questions is a interesting.</h2>
+    <input type="radio" id="q12yes" name="answer12" value="yes">
+    <label for="q12yes">Yes</label>
+
+    <input type="radio" id="q12no" name="answer12" value="no">
+    <label for="q12no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>13.You prefer to completely finish one project before starting another.</h2>
+    <input type="radio" id="q13yes" name="answer13" value="yes">
+    <label for="q13yes">Yes</label>
+
+    <input type="radio" id="q13no" name="answer13" value="no">
+    <label for="q13no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>14.You like to use organizing tools like schedules and lists.</h2>
+    <input type="radio" id="q14yes" name="answer14" value="yes">
+    <label for="q14yes">Yes</label>
+
+    <input type="radio" id="q14no" name="answer14" value="no">
+    <label for="q14no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>15.You prefer to do your chores before allowing yourself to relax.</h2>
+    <input type="radio" id="q15yes" name="answer15" value="yes">
+    <label for="q15yes">Yes</label>
+
+    <input type="radio" id="q15no" name="answer15" value="no">
+    <label for="q15no">No</label>
+  </div>
+  <div class="question-box">
+    <h2>16.You like to have a to-do list for each day.</h2>
+    <input type="radio" id="q16yes" name="answer16" value="yes">
+    <label for="q16yes">Yess</label>
+
+    <input type="radio" id="q16no" name="answer16" value="no">
+    <label for="q16no">No</label>
+  </div>
+  
+  <button onclick="getResult()" class="result">Get Result</button>
+  
+  
+  <!-- Your HTML content for questions -->
+  <!-- Ensure that the button onclick attribute points to the JavaScript function getResult() -->
+  
+  <!-- Your JavaScript code -->
+  <script>
+    var result1 = 0,
+        result2 = 0,
+        result3 = 0,
+        result4 = 0;
+        result5 = 0;
+        result6 = 0;
+        result7 = 0;
+        result8 = 0;
+
+
+    async function getResult() {
+      const answers = {
+        // Fetching answers for the first group of questions
+        answer1: document.querySelector('input[name="answer1"]:checked').value,
+        answer2: document.querySelector('input[name="answer2"]:checked').value,
+        answer3: document.querySelector('input[name="answer3"]:checked').value,
+        answer4: document.querySelector('input[name="answer4"]:checked').value,
+
+        // Fetching answers for the second group of questions
+        answer5: document.querySelector('input[name="answer5"]:checked').value,
+        answer6: document.querySelector('input[name="answer6"]:checked').value,
+        answer7: document.querySelector('input[name="answer7"]:checked').value,
+        answer8: document.querySelector('input[name="answer8"]:checked').value,
+
+        // Fetching answers for the third group of questions
+        answer9: document.querySelector('input[name="answer9"]:checked').value,
+        answer10: document.querySelector('input[name="answer10"]:checked').value,
+        answer11: document.querySelector('input[name="answer11"]:checked').value,
+        answer12: document.querySelector('input[name="answer12"]:checked').value,
+
+        // Fetching answers for the fourth group of questions
+        answer13: document.querySelector('input[name="answer13"]:checked').value,
+        answer14: document.querySelector('input[name="answer14"]:checked').value,
+        answer15: document.querySelector('input[name="answer15"]:checked').value,
+        answer16: document.querySelector('input[name="answer16"]:checked').value,
+      };
+
+      // Processing the first group of questions
+      if (answers.answer1 === 'yes') result1++;
+      else result2++;
+      if (answers.answer2 === 'yes') result1++;
+      else result2++;
+      if (answers.answer3 === 'yes') result1++;
+      else result2++;
+      if (answers.answer4 === 'yes') result1++;
+      else result2++;
+
+      // Processing the second group of questions
+      if (answers.answer5 === 'yes') result3++;
+      else result4++;
+      if (answers.answer6 === 'yes') result3++;
+      else result4++;
+      if (answers.answer7 === 'yes') result3++;
+      else result4++;
+      if (answers.answer8 === 'yes') result3++;
+      else result4++;
+
+      //processing the third group of question
+      if (answers.answer9 === 'yes') result5++;
+      else result6++;
+      if (answers.answer10 === 'yes') result5++;
+      else result6++;
+      if (answers.answer11 === 'yes') result5++;
+      else result6++;
+      if (answers.answer12 === 'yes') result5++;
+      else result6++;
+
+        //processing the fouth  group of question
+        if (answers.answer13 === 'yes') result7++;
+      else result8++;
+      if (answers.answer14 === 'yes') result7++;
+      else result8++;
+      if (answers.answer15=== 'yes') result7++;
+      else result8++;
+      if (answers.answer16 === 'yes') result7++;
+      else result8++;
+
+      // Repeat the process for the third and fourth group of questions...
+
+      // Comparing the variables within each group
+      const group1Result = result1 > result2 ? 'e' : 'i';
+      const group2Result = result3 > result4 ? 's' : 'n';
+      const group3Result = result5 > result6 ? 'f' : 't';
+      const group4Result = result7 > result8 ? 'j' : 'p';
+
+      // You can continue this process for the remaining groups...
+
+      // console.log('Group 1 Result:', group1Result);
+      // console.log('Group 2 Result:', group2Result);
+      
+        if(group1Result=='e' && group2Result=='s' && group3Result=='f' && group4Result=='j'){
+          window.location.href = 'http://localhost/phplearn/tanmay/result/10thesfj.html';
+        }
+        
+       else if(group1Result=='e' && group2Result=='s' && group3Result=='f' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thesfp.html';
+      }
+      else if(group1Result=='e' && group2Result=='s' && group3Result=='t' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thestj.html';
+      }
+      else if(group1Result=='e' && group2Result=='s' && group3Result=='t' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thestj.html';
+      }
+      else if(group1Result=='e' && group2Result=='n' && group3Result=='f' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thenfj.html';
+      }
+      else if(group1Result=='e' && group2Result=='n' && group3Result=='f' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thenfp.html';
+      }
+      else if(group1Result=='e' && group2Result=='n' && group3Result=='t' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thenfp.html';
+      }
+      else if(group1Result=='e' && group2Result=='n' && group3Result=='t' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10thentp.html';
+      }
+      else if(group1Result=='i' && group2Result=='s' && group3Result=='f' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10ISFJ.html';
+      }
+      else if(group1Result=='i' && group2Result=='s' && group3Result=='f' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10ISFP.html';
+      }
+      else if(group1Result=='i' && group2Result=='s' && group3Result=='t' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10ISTJ.html';
+      }
+      else if(group1Result=='i' && group2Result=='s' && group3Result=='t' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10ISTP.html';
+      }
+      else if(group1Result=='i' && group2Result=='n' && group3Result=='f' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10INFJ.html';
+      }
+      else if(group1Result=='i' && group2Result=='n' && group3Result=='f' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10INFP.html';
+      }
+      else if(group1Result=='i' && group2Result=='n' && group3Result=='t' && group4Result=='j'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10INTJ.html';
+      }
+      else if(group1Result=='i' && group2Result=='n' && group3Result=='t' && group4Result=='p'){
+        window.location.href = 'http://localhost/phplearn/tanmay/result/10INTP.html';
+      }
+    }
+
+    
+  </script>
+</body>
+</html>   
+ 
